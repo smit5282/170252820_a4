@@ -1,0 +1,315 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.column {
+
+}
+.profile {
+    padding: 5rem 0;
+}
+.profile::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+p {
+  font-size: 8px;
+  color: grey;
+  font-family: 'verdana';
+}
+.container {
+    max-width: 93.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.profile-image {
+    float: left;
+    width: calc(33.333% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+.profile-image img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    left: 30%;
+    position: relative;
+}
+.profile-user-settings {
+    float: left;
+    width: calc(66.666% - 2rem);
+    margin-top: 1.1rem;
+}
+.profile-real-name {
+    font-weight: 600;
+}
+.profile-user-name {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Arial';
+}
+.profile-bio {
+    font-size: 14px;
+    font-family: 'Arial';
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 2.3rem;
+}
+
+.row {
+  display: flex;
+  width: 980px;
+  margin: auto;
+}
+
+div img {
+  width: 293px;
+  height: 293px;
+  align-self: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container > div {
+  width: 293px;
+  height: 293px;
+  margin: 12px;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 935px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  margin: auto;
+}
+#text {
+  position: absolute;
+  top: 23px;
+  left: 50px;
+  font-size: 12px;
+  color: black;
+}
+#myImage {
+  height: 600px;
+  width: 600px;
+}
+
+.main-user {
+  margin-left: 10px;
+  margin-top: .5px;
+  font-family: 'Arial';
+  }
+.comment1-user {
+  margin-left: 10px;
+  margin-top: 85px;
+  font-family: 'Arial';
+}
+.comment2-user {
+  margin-left: 10px;
+  margin-top: 145px;
+  font-family: 'Arial';
+}
+.comment-img {
+  position: absolute;
+  left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.like-comment-share {
+  margin-left: auto;
+  margin-top: 510px;
+  width: 335px;
+  height: 50px;
+  border-top: 1px solid gray;
+}
+.side-box {
+  width: 335px;
+  height: 600px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 600px;
+  background: white;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+#like {
+  padding: 1px;
+  margin-left: 11px;
+}
+#comment {
+  padding: 1px;
+  position: fixed;
+  margin-top: -10px;
+  margin-left: -240px;
+}
+#share {
+  padding: 1px;
+  position: fixed;
+  margin-top: -10px;
+  margin-left: -236px;
+}
+#bookmark {
+  padding-left: 10px;
+  margin-left: -30px;
+}
+
+.likes {
+  left: 66%;
+  font-size: 18px;
+  color: black;
+  margin-left: -62%;
+  margin-top: -15px;
+  position: absolute;
+  font-size: 10px;
+  font-family: 'arial';
+}
+#main.comment-img {
+  top: 3%;
+}
+#comment1.comment-img {
+  top: 16%;
+}
+#comment2.comment-img {
+  top: 26.5%;
+}
+
+@media screen and (max-width: 800px) {
+    .row {
+      width: 100%;
+    }
+    .mobile {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    width: 100%;
+  }
+  .profile-bio {
+    display: none;
+  }
+  .profile-image {
+      float: none;
+      margin: auto;
+      margin-left: 30%;
+  }
+  .profile-user-settings {
+      float: none;
+      margin-top: 1.1rem;
+      margin: auto;
+  }
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  #myImage {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    margin-left: 18%;
+    margin-top: 15%;
+    position: absolute;
+  }
+  .comments-info {
+    display: none;
+  }
+  .user-info {
+    color: black;
+    left: 110px;
+  }
+  #text {
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    left: 33%;
+    top: -1.2%;
+  }
+  .main-user {
+    left: 135px;
+  }
+  .comment-img {
+    position: absolute;
+    left: 20%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: -1%;
+  }
+  .like-comment-share {
+    position: absolute;
+    margin-top: 350px;
+
+    top: -40px;
+    border-top: none;
+  }
+  .likes {
+    position: absolute;
+    margin-top: 329px;
+    margin-left: -45%;
+  }
+  .side-box {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background: transparent;
+    margin-top: 4.5%;
+    margin-right: -100%;
+    padding: 8px 0;
+    left: 0%;
+  }
+  #main.comment-img {
+    top: 1%;
+    margin-left: 4.5%;
+    position: absolute;
+  }
+  #like {
+    padding: 1px;
+    margin-left: 105px;
+    margin-bottom: 49px;
+    position:
+  }
+  #comment {
+    padding: 1px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -180px;
+  }
+  #share {
+    padding: 1px;
+    position: absolute;
+    margin-top: -33px;
+    margin-left: -236px;
+  }
+  #bookmark {
+    padding-left: 10px;
+    margin-left: -30px;
+    margin-top: -30px;
+    position: absolute;
+  }
+}

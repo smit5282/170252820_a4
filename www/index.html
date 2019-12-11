@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>FakeStagram</title>
+</head>
+
+
+<body>
+  <header>
+
+    <div class="container">
+
+      <div class="profile">
+
+        <div class="profile-image">
+          <img src="img/0.jpg" alt="">
+        </div>
+
+        <div class="profile-user-settings">
+          <h1 class="profile-user-name">Jakerz57</h1>
+        </div>
+
+        <div class="profile-bio">
+          <span class="profile-real-name"></span> Welcome to my instagram, hope you enjoy!
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <div id="overlay" onclick="off()">
+
+    <img id="myImage" src="">
+
+    <div class="side-box">
+
+      <div class="user-info">
+        <img id="main" class="comment-img" src="img/0.jpg"/>
+        <div id="text" class="main-user"><strong>Jakerz57</strong>
+          <br>
+          <p>Waterloo, Ontario</p></div>
+      </div>
+
+      <div class="comments-info">
+        <img id="comment1" class="comment-img" src="img/2.jpg"/>
+        <div id="text" class="comment1-user">
+          <strong>MikeTyson</strong> Great Picture! Love your page!
+          <p>7w Reply</p>
+        </div>
+
+        <img id="comment2" class="comment-img" src="img/13.jpg"/>
+        <div id="text" class="comment2-user"><strong>TomHolland</strong> You are truly an inspiration!
+          <p>8w Reply</p>
+        </div>
+      </div>
+
+      <table class="like-comment-share">
+        <tbody>
+          <tr>
+            <td>
+              <i id="like" class="fa fa-heart-o" aria-hidden="true">
+            </td>
+
+            <td>
+              <i id="comment" class="fa fa-comment-o" aria-hidden="true">
+            </td>
+
+            <td>
+              <i id="share" class="fa fa-share-square-o" aria-hidden="true">
+            </td>
+
+            <td>
+              <i id="bookmark" class="fa fa-bookmark-o" aria-hidden="true">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="likes">608 likes
+      <br>
+      <p>10 WEEKs AGO</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="flex-container">
+
+      <div>
+        <img src="img/1.jpg" onclick="on('img/1.jpg')">
+      </div>
+
+      <div>
+        <img src="img/2.jpg" onclick="on('img/2.jpg')">
+      </div>
+
+      <div>
+        <img src="img/3.jpg" onclick="on('img/3.jpg')">
+      </div>
+
+      <div>
+        <img src="img/4.jpg" onclick="on('img/4.jpg')">
+      </div>
+
+      <div>
+        <img src="img/5.jpg" onclick="on('img/5.jpg')">
+      </div>
+
+      <div>
+        <img src="img/6.jpg" onclick="on('img/6.jpg')">
+      </div>
+
+      <div>
+        <img src="img/7.jpg" onclick="on('img/7.jpg')">
+      </div>
+
+      <div>
+        <img src="img/8.jpg" onclick="on('img/8.jpg')">
+      </div>
+
+      <div>
+        <img src="img/9.jpg" onclick="on('img/9.jpg')">
+      </div>
+
+      <div>
+        <img src="img/10.jpg" onclick="on('img/10.jpg')">
+      </div>
+
+      <div>
+        <img src="img/11.jpg" onclick="on('img/11.jpg')">
+      </div>
+
+      <div>
+        <img src="img/12.jpg" onclick="on('img/12.jpg')">
+      </div>
+
+      <div>
+        <img src="img/13.jpg" onclick="on('img/13.jpg')">
+      </div>
+
+      <div>
+        <img src="img/14.jpg" onclick="on('img/14.jpg')">
+      </div>
+
+      <div>
+        <img src="img/15.jpg" onclick="on('img/15.jpg')">
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function on(imgURL) {
+      document.getElementById("myImage").src = imgURL;
+      document.getElementById("overlay").style.display = "block";
+    }
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+
+    </div>
+  </div>
+</body>
+</html>
